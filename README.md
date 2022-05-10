@@ -41,8 +41,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/giaonnq1401/FrontendMentor-fylo-landing-page)
+- Live Site URL: [GitHub Pages](https://giaonnq1401.github.io/FrontendMentor-fylo-landing-page/)
 
 ## My process
 
