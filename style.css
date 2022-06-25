@@ -187,6 +187,10 @@ input::placeholder {
     height: 40px;
     margin-right: .9rem;
 }
+
+.fylo_team__founder p {
+    font-weight: 700;
+}
 .fylo_team__founder span {
     font-size: .7rem;
 }
