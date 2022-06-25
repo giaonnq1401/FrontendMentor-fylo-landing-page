@@ -142,8 +142,6 @@ input::placeholder {
     flex-direction: column;
     padding-bottom: 1.875rem;
 }
-    font-size: 15px;
-}
 
 .stay_productive_content p {
     color: var(--desaturated-blue);
