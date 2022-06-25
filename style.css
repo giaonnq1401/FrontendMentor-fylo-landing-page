@@ -221,6 +221,10 @@ input::placeholder {
     text-align: center;
 }
 
+.get_access__content h1 {
+    font-size: 1.375rem;
+}
+
 /* footer */
 footer {
     background-color: var(--very-dark-blue);
@@ -291,10 +295,6 @@ footer {
 
     h1 {
         text-align: left;
-    }
-
-    h3 {
-        font-size: 1.4rem;
     }
 
     .fylo_intro .all_your_files .intro_img {

@@ -33,6 +33,7 @@ Users should be able to:
 
 - Solution URL: [GitHub](https://github.com/giaonnq1401/FrontendMentor-fylo-landing-page)
 - Live Site URL: [GitHub Pages](https://giaonnq1401.github.io/FrontendMentor-fylo-landing-page/)
+- Frontend Mentor: [Frontend Solution](https://www.frontendmentor.io/solutions/fylo-landing-page-using-htmlcss-NhmoCf2oDG)
 
 ## My process
 
