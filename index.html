@@ -19,7 +19,7 @@
 </head>
 <body>
 
-  <main>
+  <header>
     <nav>
       <div class="logo">
         <img src="./images/logo.svg" alt="">
@@ -30,7 +30,9 @@
         <li>Sign In</li>
       </ul>
     </nav>
-    
+  </header>
+  
+  <main>
     <section class="fylo_intro">
 
       <div class="container all_your_files">
@@ -59,9 +61,8 @@
       </div>
 
     </section>
-    
-    <section class="fylo_infor">
-      
+
+    <section class="fylo_infor"> 
       <div class="container stay_productive">
 
         <div class="infor_img">
@@ -101,8 +102,8 @@
             <div class="fylo_team__founder">
               <img src="./images/avatar-testimonial.jpg" alt="">
               <div>
-                <span>Kyle Burton</span>
-                <p>Founder & CEO, Huddle</p>
+                <h4>Kyle Burton</h4>
+                <span>Founder & CEO, Huddle</span>
               </div>
             </div>
           </div>
@@ -115,31 +116,37 @@
     
     <section class="fylo_access">
       <div class="container get_access">
-        <h3>Get early access today</h3>
+        <div class="get_access__content">
+          <h3>Get early access today</h3>
         
-        It only takes a minute to sign up and our free starter tier is extremely generous.
-        If you have any questions, our support team would be happy to help you.
+          <p>
+            It only takes a minute to sign up and our free starter tier is extremely generous.
+            If you have any questions, our support team would be happy to help you.
+          </p>
+        </div>
         
-        <input type="text" name="email" placeholder="email@example.com">
-        <button>Get Started For Free</button>
+        <div class="input_email">
+          <input type="text" name="email" placeholder="email@example.com">
+          <button>Get Started For Free</button>
+        </div>
       </div>
     </section>
     
   </main>
 
   <footer>
-    <img src="./images/logo.svg" class="logo_filter" alt="">
+    <img src="./images/logo-footer.svg" class="logo_filter" alt="">
 
     <div class="footer_content">
       <div class="footer_info">
         <ul>
           <li>
             <img src="./images/icon-phone.svg" alt="">
-            Phone: +1-543-123-4567
+            <span>Phone: +1-543-123-4567</span>
           </li>
           <li>
             <img src="./images/icon-email.svg" alt="">
-            example@fylo.com
+            <span>example@fylo.com</span>
           </li>
         </ul>
       </div>

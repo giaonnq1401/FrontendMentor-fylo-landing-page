@@ -69,7 +69,7 @@ nav .nav_item_list li {
 
 /* sections */
 .container {
-    margin: 1.9rem 1.875rem ;
+    margin: 1.9rem 1.875rem 0 1.875rem;
     display: flex;
     flex-direction: column;
 }
@@ -79,13 +79,9 @@ nav .nav_item_list li {
 }
 
 /* all_your_files */
-.fylo_intro .all_your_files .intro_img {
-    width: 95%;
-}
-
 
 .intro_content h1 {
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 .intro_content p {
@@ -93,22 +89,27 @@ nav .nav_item_list li {
     margin: 1rem 0;
 }
 
+input::placeholder {
+    color: var(--light-gray);
+}
+
 .input_email {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: .875rem;
     margin: 1.5rem 0;
 }
 
 .input_email input {
     padding: 0.575rem;
-    height: 2rem;
+    height: 2.3rem;
     border-radius: 4px;
     border: solid .8px var(--very-dark-blue);
 }
+
 .input_email button {
     padding: 0.575rem;
-    height: 2rem;
+    height: 2.2rem;
     background: var(--bright-blue);
     border: none;
     border-radius: 4px;
@@ -117,15 +118,30 @@ nav .nav_item_list li {
 }
 /* end all_your_files */
 
+.fylo_infor {
+    margin-top: 120px;
+    position: relative;
+    background-color: #F8F8FE;
+}
+
+.fylo_infor::before {
+    content: "";
+    position: absolute;
+    height: 30%;
+    top: -30%;
+    width: 100%;
+    background-image: url(/images/bg-curve-mobile.svg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 /* stay_productive */
 .fylo_infor .stay_productive {
     display: flex;
     flex-direction: column;
-    background-image: url(./images/bg-curve-mobile.svg);
+    padding-bottom: 1.875rem;
 }
-
-.stay_productive_content h1 {
     font-size: 15px;
 }
 
@@ -139,7 +155,9 @@ nav .nav_item_list li {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    margin: 1.5rem auto;
+    border-bottom: var(--moderate-cyan) 2px solid;
+    width: max-content;
 }
 
 .fylo_infor__works span {
@@ -153,10 +171,11 @@ nav .nav_item_list li {
 }
 
 .fylo_team {
-    width: 80%;
+    width: 90%;
     margin: auto;
     background-color: white;
-    padding: 2rem;
+    padding: 1.8rem;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
 }
 
 .fylo_team__founder {
@@ -170,17 +189,54 @@ nav .nav_item_list li {
     height: 40px;
     margin-right: .9rem;
 }
+.fylo_team__founder span {
+    font-size: .7rem;
+}
+
+/* fylo_access */
+.fylo_access {
+    background-color: var(--desaturated-blue);
+    padding: 1.2rem 0;
+}
+
+.get_access {
+    align-items: center;
+    color: var(--light-grayish-blue);
+}
+
+.get_access p {
+    text-align: center;
+    line-height: 1.5;
+    margin: 1rem 0;
+    font-size: .975rem;
+}
+.get_access .input_email {
+    width: 80%;
+    gap: .5rem;
+}
+
+.get_access__content {
+    text-align: center;
+}
 
 /* footer */
 footer {
     background-color: var(--very-dark-blue);
     color: var(--light-grayish-blue);
-    padding: 1.5rem 1.875rem;
+    padding: 1.5rem 3.875rem;
+}
+
+.logo_filter {
+    -webkit-filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+    filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4);
+    margin: 1.4rem 0;
 }
 
 .footer_content {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 1.8rem;
 }
 
 .footer_content ul li {
@@ -188,23 +244,161 @@ footer {
     padding-top: .275rem;
 }
 
-.social {
+.footer_info li{
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.footer_social {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social{
     text-decoration: none;
     color: white;
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 1.8rem;
+    height: 1.8rem;
     border: 2px solid white;
     border-radius: 50%;
+    display: flex;
+}
+.fab {
+    margin: auto;
 }
 
 @media screen and (min-width: 62.5rem) {
+    p {
+        font-size: 1rem;
+    }
+
     nav {
         height: 9rem;
         margin: 0 3.875rem;
     }
 
+    nav .logo {
+        width: 8rem;
+    }
+
+    nav .nav_item_list li {
+        font-size: 1rem;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .fylo_intro .all_your_files .intro_img {
+        width: 48%;
+    }
+
+    .fylo_intro .all_your_files .intro_content {
+        width: 52%;
+        margin-top: 3.5rem;
+    }
+
+    .intro_content h1 {
+        font-size: 1.9rem;
+    }
+
     .container {
-        margin: 1rem 3.875rem ;
+        margin: 1rem 3.875rem 0 3.875rem;
         flex-direction: row-reverse;
+    }
+
+    .intro_content p {
+        text-align: left;
+    }
+
+    .input_email {
+        flex-direction: row;
+    }
+
+    .input_email input {
+        width: 60%;
+    }
+
+    .input_email button {
+        width: 30%;
+        font-weight: 400;
+    }
+
+    .fylo_infor {
+        margin-top: 200px;
+    }
+    .fylo_infor::before {
+        background-image: url(./images/bg-curve-desktop.svg);
+    }
+
+    .fylo_infor .stay_productive {
+        flex-direction: row-reverse;
+        padding-bottom: 3rem;
+    }
+
+    .fylo_infor .stay_productive .infor_img {
+        width: 45%;
+        margin-top: 1.2rem;
+    }
+
+    .fylo_infor .stay_productive .infor_text {
+        width: 55%;
+    }
+
+    .stay_productive_content h1 {
+        font-size: 1.9rem;
+    }
+
+    .stay_productive_content p {
+        color: #000;
+    }
+
+    .fylo_infor__works {
+        margin: 0 0 2.2rem;
+    }
+
+    .fylo_team {
+        width: 65%;
+        margin: 0;
+    }
+
+    .fylo_team p {
+        font-size: .875rem;
+    }
+
+    .fylo_access .get_access {
+        flex-direction: row;
+    }
+
+    .get_access p {
+        text-align: left;
+    }
+
+    .get_access__content {
+        width: 45%;
+        text-align: left;
+    }
+
+    .get_access .input_email {
+        flex-direction: column;
+        width: 45%;
+        margin-left: 5.5rem;
+    }
+
+    .get_access .input_email input {
+        width: 90%;
+    }
+    .get_access .input_email button {
+        width: 50%;
+    }
+
+    .footer_content {
+        flex-direction: row;
     }
 }
